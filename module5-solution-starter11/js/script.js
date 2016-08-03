@@ -115,7 +115,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       // 
-      var fihtml = insertProperty(fHtml,"randomCategoryShortName", "'"+ chosenCategoryShortName.short_name +"'");
+      var finhtml = insertProperty(fHtml,"randomCategoryShortName", "'"+ chosenCategoryShortName.short_name +"'");
     
 
       
@@ -123,7 +123,7 @@ function buildAndShowHomeHTML (categories) {
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that. 
-      insertHtml("#main-content", fihtml);
+      insertHtml("#main-content", finhtml);
       
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
